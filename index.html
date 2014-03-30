@@ -206,6 +206,92 @@
 				</section>
 
 				<section>
+					<section>
+						<h2>Commands</h2>
+						<p>Wtf ? Commands, this is just a text editor, why don't you just let me type in some text</p>
+					</section>
+
+					<section>
+						<h2>Common commands</h2>
+						<ul>
+							<li>Quit: &ldquo;:q&rdquo;</li>
+							<li>Quit and I don't care about the changes: &ldquo;:q!&rdquo;</li>
+							<li>Quit everything: &ldquo;:qa&rdquo;</li>
+							<li>Write: &ldquo;:w&rdquo;</li>
+							<li>Write and quit: &ldquo;:wq&rdquo;</li>
+						</ul>
+						<p><small>&ldquo;:help editing.txt&rdquo;</small></p>
+					</section>
+
+					<section>
+						<h2>Copy / paste</h2>
+						<ul>
+							<li>Copy: &ldquo;y&rdquo; (called yank)</li>
+							<li>Cut: &ldquo;d&rdquo; (delete)</li>
+							<li>Cut Characters: &ldquo;x&rdquo; (cut after); &ldquo;X&rdquo; (cut before)</li>
+							<li>Paste: &ldquo;p&rdquo;</li>
+						</ul>
+						<p><small>&ldquo;:help change.txt&rdquo;</small></p>
+					</section>
+
+					<section>
+						<h2>Text Manipulation</h2>
+						<ul>
+							<li>Replace current selection: &ldquo;r&rdquo;</li>
+							<li>Replace from current postion: &ldquo;R&rdquo;</li>
+							<li>Substitute (search and replace):<br />&ldquo;:s/{pattern}/{substitution}/{flags}&rdquo;</li>
+							<li>Flip the case of character: &ldquo;~&rdquo;</li>
+							<li>Increment number: &ldquo;ctrl + a&rdquo;</li>
+							<li>Decrement number: &ldquo;ctrl + x&rdquo;</li>
+						</ul>
+						<p><small>&ldquo;:help change.txt&rdquo;</small></p>
+					</section>
+
+					<section>
+						<h2>Undo / Redo</h2>
+						<ul>
+							<li>Undo: &ldquo;u&rdquo;</li>
+							<li>Undo last change on this line: &ldquo;U&rdquo;</li>
+							<li>Redo: &ldquo;ctrl + r&rdquo;</li>
+						</ul>
+						<p><small>&ldquo;:help undo.txt&rdquo;</small></p>
+					</section>
+
+					<section>
+						<h2>Quantifiers</h2>
+						<p>Quantifiers can be used to 'extend' the reach of a command</p>
+						<ul>
+							<li>Move to the 5th word: &ldquo;5w&rdquo;</li>
+							<li>Yank the next 3 lines: &ldquo;3yy&rdquo;</li>
+							<li>Delete up til the end of the 3rd word form here: &ldquo;d3e&rdquo;</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Ranges</h2>
+						<p>Most commands support ranges, ranges are defined like<br />&ldquo;:{start},{end} {command}&rdquo;</p>
+						<ul>
+							<li>Visual selection: &ldquo;:'&lt;,'&gt;&rdquo;</li>
+							<li>All lines in file: &ldquo;:%&rdquo;</li>
+							<li>From line 4 to 10; &ldquo;:4,10&rdquo;</li>
+						</ul>
+						<p><small>&ldquo;:help range&rdquo;</small></p>
+					</section>
+
+					<section>
+						<h2>Formatting text</h2>
+						<ul>
+							<li>Center align: &ldquo;:ce {width}&rdquo;</li>
+							<li>Right align: &ldquo;:ri {width}&rdquo;</li>
+							<li>Left align: &ldquo;:le {indent}&rdquo;</li>
+							<li>Format paragraph: &ldquo;gqip&rdquo;</li>
+							<li>Format current selection: &ldquo;gq&rdquo;</li>
+						</ul>
+						<p><small>&ldquo;:help formatting&rdquo;</small>&nbsp;<small>&ldquo;:help text-objects&rdquo;</small></p>
+					</section>
+				</section>
+
+				<section>
 					<h2>Questions ?</h2>
 				</section>
 
