@@ -36,7 +36,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				
+
 				<section>
 					<h1>Vim for PHP Developers</h1>
 					<p>
@@ -294,6 +294,87 @@
 				<section>
 					<h2>Still no word about PHP ?!?</h2>
 					<img src="assets/boring.jpg" alt="boring" />
+				</section>
+
+				<section>
+					<h2>No PHP yet !</h2>
+				</section>
+
+				<section>
+					<section>
+						<h2>Stuff for coders, what do we want?</h2>
+						<ul>
+							<li class="fragment">syntax highlighting</li>
+							<li class="fragment">completion</li>
+							<li class="fragment">search in files</li>
+							<li class="fragment">syntax errors</li>
+							<li class="fragment">project based configuration</li>
+							<li class="fragment">file/folder navigation</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Many of the things we need are available out of the box</h2>
+					</section>
+
+					<section>
+						<h2>syntax highlighting</h2>
+						<p>If you are getting on a ubuntu server, first action:<br />apt-get install vim</p>
+						<p>In most linux distributions vim comes with syntax highlighting enabled by default.</p>
+						<p>In many distributions the default vim installed is a vi compatbile tiny version, install the full version!</p>
+					</section>
+
+					<section>
+						<h2>completion</h2>
+						<ul>
+							<li>&ldquo;ctrl-x ctrl-f&rdquo; file names</li>
+							<li>&ldquo;ctrl-x ctrl-l&rdquo; whole lines</li>
+							<li>&ldquo;ctrl-x ctrl-i&rdquo; current and included files</li>
+							<li>&ldquo;ctrl-x ctrl-k&rdquo; words from a dictionary</li>
+							<li>&ldquo;ctrl-x ctrl-t&rdquo; words from a thesaurus</li>
+							<li>&ldquo;ctrl-x ctrl-]&rdquo; tags</li>
+							<li>&ldquo;ctrl-x ctrl-v&rdquo; Vim command line</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>search in files</h2>
+						<ul>
+							<li>&ldquo;:grep {search} {infiles}&rdquo; </li>
+							<li>&ldquo;:lgrep {search} {infiles}&rdquo;</li>
+							<li>&ldquo;:vimgrep {search} {infiles}&rdquo;</li>
+							<li>&ldquo;:lvimgrep {search} {infiles}&rdquo;</li>
+						</ul>
+						<ul>
+							<li>&ldquo;:cnext&rdquo; goto the next result</li>
+							<li>&ldquo;:cprevious&rdquo; goto the previous result</li>
+						</ul>
+						<p>The default search functions in Vim are fairly hard to use</p>
+					</section>
+
+					<section>
+						<h2>syntax errors</h2>
+						<p>
+							You could manually abuse the makeprg setting in vim and set it to &ldquo;php -l %&rdquo; but when using PHP, html, javascript, ...
+							you might want syntax errors for all of those languages.
+						</p>
+					</section>
+
+					<section>
+						<h2>project based configuration</h2>
+						<p>We must explicitly add a configuration option to allow vim to load a .vimrc file from the directory you are starting vim from.<p>
+						<p><small>&ldquo;:help exrc&rdquo;</small></p>
+					</section>
+
+					<section>
+						<h2>file/folder navigation</h2>
+						<p>There is by default a file navigator built in in vim called netrw, if you have to use it, it does the job fine, but it is not really user frienly</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>OMG Vim is HARD!</h2>
+					<img src="assets/text_editors.jpg" alt="text editors" />
 				</section>
 
 				<section>
