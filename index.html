@@ -440,13 +440,132 @@
 				</section>
 
 				<section>
+					<section>
+						<h2>Plugins will help us</h2>
+						<p>What follows are a list of plugins I use, that does in no way mean those are the best. When you use a plugin make sure you feel an improvement in your workflow.</p>
+					</section>
+
+					<section>
+						<h2>(C)tags</h2>
+						<p>(C)tags is not really a plugin, it is a built in feature of Vim. This built in feature can already start making our lives much easier.</p>
+						<p>There are plugins to generate your tagfiles on save, or on quit. I personally generate them whenever I see fit.</p>
+						<ul>
+							<li>Jump to tag under cursor: &ldquo;ctrl+]&rdquo;</li>
+							<li>Go back to originating file: &ldquo;ctrl+t&rdquo;</li>
+						</ul>
+						<p><small>&ldquo;:help tagsrch.txt&rdquo;</small></p>
+					</section>
+
+					<section>
+						<h2>Plugin manager</h2>
+						<p>In the old days you usually installed plugins by extracting a zipfile in your &ldquo;~/.vim&rdquo; folder. Luckily, these days are over, now we have several plugins ;) that manage our plugins.</p>
+						<p>Some &ldquo;plugin managers&rdquo;:</p>
+						<ul class="fragment">
+							<li><a href="https://github.com/tpope/vim-pathogen">pathogen</a> is very simple by concept and use</li>
+							<li><a href="https://github.com/gmarik/Vundle.vim">Vundle</a> is using a config file and installs plugins automatically</li>
+							<li><a href="https://github.com/Shougo/neobundle.vim">NeoBundle</a> is based on Vundle, but adds more features</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/scrooloose/nerdtree">The NERD Tree</a></h2>
+						<p>The NERD Tree is a tree like file explorer for vim</p>
+						<img src="assets/nerdtree.png" alt="nerdtree" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/kien/ctrlp.vim">ctrlp.vim</a></h2>
+						<p>In short this is a fuzzy typed fast filefinder</p>
+						<img src="assets/ctrlp.png" alt="ctrlp" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/mileszs/ack.vim">ack.vim</a></h2>
+						<p>As you could guess the plugin uses the ack command to search in code files.</p>
+						<img src="assets/ack.png" alt="ack" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/tyok/nerdtree-ack">NERDtree + Ack.vim</a></h2>
+						<p>NERDTree Ack is an extension for nerdtree which adds a few menu items to search with ack</p>
+						<img src="assets/nerdtreeack.png" alt="nerdtreeack" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/joonty/vim-sauce">Sauce for Vim</a></h2>
+						<p>Sauce is a &ldquo;project&rdquo; like plugin, it creates an extra project specific vimrc file where you can keep the location of the project, maybe indenting options, ...</p>
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/roblillack/vim-bufferlist">VIM bufferlist</a></h2>
+						<p>VIM bufferlist gives you a list of open buffers (files).</p>
+						<img src="assets/bufferlist.png" alt="bufferlist" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/ervandew/supertab">supertab</a></h2>
+						<p>Supertab is a plugin that helps you to use completion in insert mode, when you press <tab> you get a list of possible completions.</p>
+						<img src="assets/supertab.png" alt="supertab" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/scrooloose/syntastic">Syntastic</a></h2>
+						<p>Syntastic is a syntax checker plugin, it will run a syntax check on the open file.</p>
+						<img src="assets/syntastic.png" alt="syntastic" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/majutsushi/tagbar">tagbar</a></h2>
+						<p>Tagbar displays a summary of your class or file. It lists classes, paramters and methods.</p>
+						<img src="assets/tagbar.png" alt="tagbar" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/scrooloose/nerdcommenter">NERDcommenter</a></h2>
+						<p>NERDcommenter helps you to quickly add comments to a line or multiple lines.</p>
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/sumpygump/php-documentor-vim">PHP Documentor for Vim</a></h2>
+						<p>PHP Documentor for Vim is a plugin to easily create docblocks on your classes, parameters and methods.</p>
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/EvanDotPro/php_getset.vim">php_getset</a></h2>
+						<p>php_getset creates getter and setter methods from the paramters selected in your class.</p>
+						<img src="assets/php_getset.png" alt="php_getset" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></h2>
+						<p>Fugitive is a git wrapper for vim, you can run practically every git command from fugitive.</p>
+						<img src="assets/fugitive.png" alt="fugitive" />
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/joonty/vdebug">vdebug</a></h2>
+						<p>Vdebug is a debugger for Vim. Every debugger speaking DBGP protocol can be used. Xdebug speaks DBGP ;)</p>
+					</section>
+				</section>
+
+				<section>
 					<h2>Questions ?</h2>
 				</section>
 
 				<section>
 					<h2>Usefull resources</h2>
+					<ul>
+						<li>http://www.vim.org/</li>
+						<li>http://vim.wikia.com/wiki/Vim_Tips_Wiki</li>
+						<li>http://vimcasts.org/</li>
+						<li>my vimfiles: https://github.com/BlackIkeEagle/vimfiles</li>
+					</ul>
 				</section>
 
+				<section>
+					<h2>Thanks.</h2>
+					<p>https://joind.in/10940</p>
+				</section>
 			</div>
 
 		</div>
