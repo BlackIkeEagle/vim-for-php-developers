@@ -32,6 +32,10 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+        <style>
+            h2 { text-align: left; }
+        </style>
 	</head>
 
 	<body>
@@ -47,15 +51,7 @@
 						Why on earth would any sane person use Vim for PHP development ?
 						Is it still relevant in the days of full blown IDE's ?
 					</p>
-					<img src="assets/vim-logo.png" alt="Vim logo" />
-				</section>
-
-				<section>
-					<h2>Ike Devolder</h2>
-					<p>@BlackIkeEagle</p>
-					<p>Senior Webdeveloper - Studio Emma</p>
-					<p>Archlinux Trusted User</p>
-					<p>Vim user :-)</p>
+					<img src="assets/vim-logo.png" alt="Vim logo" style="border: 0; background: transparent;" />
 				</section>
 
 				<section>
@@ -566,10 +562,21 @@
 					</ul>
 				</section>
 
-				<section>
-					<h2>Thanks.</h2>
-					<p><a href="https://joind.in/10940">https://joind.in/10940</a></p>
-				</section>
+                <section>
+                    <div style="width: 50%; display: inline-block; margin-right: 2%; vertical-align: top;">
+                        <h2>Thanks.</h2>
+                        <p style="text-align: left;"><a href="https://joind.in/xxxx">https://joind.in/xxxx</a></p>
+                    </div>
+                    <div style="width: 46%; display: inline-block;">
+                        <img src="assets/joindin.png" alt="joindin qr" style="width: 40%" />
+                    </div>
+                    <p><br /></p>
+                    <h2>Ike Devolder</h2>
+                    <p style="text-align: left;">@BlackIkeEagle</p>
+                    <p style="text-align: left;">Senior Webdeveloper - Studio Emma</p>
+                    <p style="text-align: left;">Archlinux Trusted User</p>
+                </section>
+
 			</div>
 
 		</div>
@@ -582,13 +589,13 @@
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
