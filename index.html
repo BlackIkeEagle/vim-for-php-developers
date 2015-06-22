@@ -154,14 +154,14 @@
 						<h2>Insert mode</h2>
 						<p>This is what you are used to, start typing and you are adding text</p>
 						<ul>
-							<li>&ldquo;i&rdquo; => insert mode at current position</li>
-							<li>&ldquo;I&rdquo; => insert mode at beginning of line</li>
-							<li>&ldquo;a&rdquo; => insert mode at next position (appending)</li>
-							<li>&ldquo;A&rdquo; => insert mode at end of line (appending)</li>
-							<li>&ldquo;o&rdquo; => insert mode open new line after current line</li>
-							<li>&ldquo;O&rdquo; => insert mode open new line before current line</li>
-							<li>&ldquo;r&rdquo; => insert mode replace current character</li>
-							<li>&ldquo;R&rdquo; => insert mode start replace from current character</li>
+							<li>&ldquo;i&rdquo; =&gt; insert mode at current position</li>
+							<li>&ldquo;I&rdquo; =&gt; insert mode at beginning of line</li>
+							<li>&ldquo;a&rdquo; =&gt; insert mode at next position (appending)</li>
+							<li>&ldquo;A&rdquo; =&gt; insert mode at end of line (appending)</li>
+							<li>&ldquo;o&rdquo; =&gt; insert mode open new line after current line</li>
+							<li>&ldquo;O&rdquo; =&gt; insert mode open new line before current line</li>
+							<li>&ldquo;r&rdquo; =&gt; insert mode replace current character</li>
+							<li>&ldquo;R&rdquo; =&gt; insert mode start replace from current character</li>
 						</ul>
 
                         <aside class='notes'>
@@ -183,11 +183,11 @@
 						<h2>Visual mode</h2>
 						<p>This mode could be compared to selecting some text</p>
 						<ul>
-							<li>&ldquo;v&rdquo; => highlight continuous text from current position</li>
-							<li>&ldquo;V&rdquo; => highlight complete lines</li>
-							<li>&ldquo;ctrl + v&rdquo; => highlight block mode (columns)</li>
+							<li>&ldquo;v&rdquo; =&gt; highlight continuous text from current position</li>
+							<li>&ldquo;V&rdquo; =&gt; highlight complete lines</li>
+							<li>&ldquo;ctrl + v&rdquo; =&gt; highlight block mode (columns)</li>
 						</ul>
-						<p> </p>
+						<p>&nbsp;</p>
 						<p><small>To define a visual highlight you can use all movement keys</small></p>
 
                         <aside class='notes'>
@@ -225,16 +225,16 @@
 						<ul>
 							<li>by word
 								<ul>
-									<li>&ldquo;w,e&rdquo; => forward beginning or end of word</li>
-									<li>&ldquo;W,E&rdquo; => forward beginning or end of word (context)</li>
-									<li>&ldquo;b,ge&rdquo; => backward beginning or end of word</li>
+									<li>&ldquo;w,e&rdquo; =&gt; forward beginning or end of word</li>
+									<li>&ldquo;W,E&rdquo; =&gt; forward beginning or end of word (context)</li>
+									<li>&ldquo;b,ge&rdquo; =&gt; backward beginning or end of word</li>
 								</ul>
 							</li>
 							<li>line
 								<ul>
-									<li>&ldquo;0&rdquo; => beginning of line</li>
-									<li>&ldquo;^&rdquo; => beginning of line (non whitespace char)</li>
-									<li>&ldquo;$&rdquo; => end of line</li>
+									<li>&ldquo;0&rdquo; =&gt; beginning of line</li>
+									<li>&ldquo;^&rdquo; =&gt; beginning of line (non whitespace char)</li>
+									<li>&ldquo;$&rdquo; =&gt; end of line</li>
 								</ul>
 							</li>
 						</ul>
@@ -243,23 +243,23 @@
 					<section>
 						<h2>Faster movement</h2>
 						<ul>
-							<li>&ldquo;gg&rdquo; => beginning of document</li>
-							<li>&ldquo;G&rdquo; => end of document</li>
-							<li>&ldquo;{N}G&rdquo; => goto linenumber {N}</li>
-							<li>&ldquo;ctrl + f&rdquo; => 'scroll' page forward</li>
-							<li>&ldquo;ctrl + b&rdquo; => 'scroll' page backward</li>
+							<li>&ldquo;gg&rdquo; =&gt; beginning of document</li>
+							<li>&ldquo;G&rdquo; =&gt; end of document</li>
+							<li>&ldquo;{N}G&rdquo; =&gt; goto linenumber {N}</li>
+							<li>&ldquo;ctrl + f&rdquo; =&gt; 'scroll' page forward</li>
+							<li>&ldquo;ctrl + b&rdquo; =&gt; 'scroll' page backward</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Search movement</h2>
 						<ul>
-							<li>&ldquo;/{search}&rdquo; => search forward for {search}</li>
-							<li>&ldquo;?{search}&rdquo; => search backard for {search}</li>
-							<li>&ldquo;f{char}&rdquo; => goto first occurence of {char} on this line</li>
-							<li>&ldquo;F{char}&rdquo; => backward of &ldquo;f&rdquo;</li>
-							<li>&ldquo;t{char}&rdquo; => goto char before first occurence of {char} on line</li>
-							<li>&ldquo;T{char}&rdquo; => reverse of &ldquo;t&rdquo;</li>
+							<li>&ldquo;/{search}&rdquo; =&gt; search forward for {search}</li>
+							<li>&ldquo;?{search}&rdquo; =&gt; search backard for {search}</li>
+							<li>&ldquo;f{char}&rdquo; =&gt; goto first occurence of {char} on this line</li>
+							<li>&ldquo;F{char}&rdquo; =&gt; backward of &ldquo;f&rdquo;</li>
+							<li>&ldquo;t{char}&rdquo; =&gt; goto char before first occurence of {char} on line</li>
+							<li>&ldquo;T{char}&rdquo; =&gt; reverse of &ldquo;t&rdquo;</li>
 						</ul>
 					</section>
 
@@ -477,7 +477,7 @@
 
 					<section>
 						<h2>project based configuration</h2>
-						<p>We must explicitly add a configuration option to allow vim to load a .vimrc file from the directory you are starting vim from.<p>
+						<p>We must explicitly add a configuration option to allow vim to load a .vimrc file from the directory you are starting vim from.</p>
 						<p><small>&ldquo;:help exrc&rdquo;</small></p>
 					</section>
 
@@ -607,7 +607,7 @@
 
 					<section>
 						<h2><a href="https://github.com/ervandew/supertab">supertab</a></h2>
-						<p>Supertab is a plugin that helps you to use completion in insert mode, when you press <tab> you get a list of possible completions.</p>
+						<p>Supertab is a plugin that helps you to use completion in insert mode, when you press &lt;tab&gt; you get a list of possible completions.</p>
 						<img src="assets/supertab.png" alt="supertab" />
 					</section>
 
@@ -661,7 +661,7 @@
 						<li><a href="http://www.vim.org/">http://www.vim.org/</a></li>
 						<li><a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">http://vim.wikia.com/wiki/Vim_Tips_Wiki</a></li>
 						<li><a href="http://vimcasts.org/">http://vimcasts.org/</a></li>
-						<li><a href="my vimfiles: https://github.com/BlackIkeEagle/vimfiles">my vimfiles: https://github.com/BlackIkeEagle/vimfiles</a></li>
+						<li><a href="https://github.com/BlackIkeEagle/vimfiles">my vimfiles: https://github.com/BlackIkeEagle/vimfiles</a></li>
 					</ul>
 				</section>
 
