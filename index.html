@@ -36,6 +36,20 @@
         <style>
             h2 { text-align: left; }
         </style>
+
+        <!-- vim -->
+        <style type="text/css">
+        <!--
+        pre.vimCodeElement { font-family: monospace; color: #657b83; background-color: #fdf6e3; border: 0; box-shadow: none; }
+        .Statement { color: #719e07; }
+        .LineNr { color: #93a1a1; background-color: #eee8d5; padding-bottom: 1px; }
+        .PreProc { color: #cb4b16; }
+        .Constant { color: #2aa198; }
+        .Special { color: #dc322f; }
+        .Identifier { color: #268bd2; }
+        .Comment { color: #93a1a1; font-style: italic; }
+        -->
+        </style>
 	</head>
 
 	<body>
@@ -487,9 +501,71 @@
 						<p>The ones mentioned before are &ldquo;most&rdquo; important to start doing our job</p>
 					</section>
 
-					<section>
+					<section data-background="#fdf6e3">
 						<h2>Demo configuration</h2>
-						<p><a href="https://github.com/BlackIkeEagle/vim-configuration-in-steps">vim configuration in steps</a></p>
+<pre class='fragment vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Comment">&quot; nocompatible must be first ( use the real vimpower )</span>
+<span id="L2" class="LineNr"> 2 </span><span class="vimCommand">set</span> <span class="PreProc">nocompatible</span>
+</pre>
+<pre class='fragment vimCodeElement'>
+<span id="L4" class="LineNr"> 4 </span><span class="Comment">&quot; backup rules</span>
+<span id="L5" class="LineNr"> 5 </span><span class="vimCommand">set</span> <span class="PreProc">backup</span> <span class="Comment">&quot; enable backup files (.txt~)</span>
+<span id="L6" class="LineNr"> 6 </span><span class="vimCommand">set</span> <span class="PreProc">undofile</span> <span class="Comment">&quot; enable persistent undo</span>
+<span id="L7" class="LineNr"> 7 </span>
+<span id="L8" class="LineNr"> 8 </span><span class="vimCommand">silent</span> <span class="vimCommand">execute</span> <span class="String">'!mkdir -p $HOME/.vim/tmp/backup'</span>
+<span id="L9" class="LineNr"> 9 </span><span class="vimCommand">set</span> <span class="PreProc">backupdir</span>=<span class="PreProc">$HOME</span>/.vim/tmp/backup <span class="Comment">&quot; where to store backup</span>
+<span id="L10" class="LineNr">10 </span><span class="vimCommand">silent</span> <span class="vimCommand">execute</span> <span class="String">'!mkdir -p $HOME/.vim/tmp/swap'</span>
+<span id="L11" class="LineNr">11 </span><span class="vimCommand">set</span> <span class="PreProc">directory</span>=<span class="PreProc">$HOME</span>/.vim/tmp/swap <span class="Comment">&quot; where to store swap</span>
+<span id="L12" class="LineNr">12 </span><span class="vimCommand">silent</span> <span class="vimCommand">execute</span> <span class="String">'!mkdir -p $HOME/.vim/tmp/views'</span>
+<span id="L13" class="LineNr">13 </span><span class="vimCommand">set</span> <span class="PreProc">viewdir</span>=<span class="PreProc">$HOME</span>/.vim/tmp/views <span class="Comment">&quot; where to store view</span>
+<span id="L14" class="LineNr">14 </span><span class="vimCommand">silent</span> <span class="vimCommand">execute</span> <span class="String">'!mkdir -p $HOME/.vim/tmp/undo'</span>
+<span id="L15" class="LineNr">15 </span><span class="vimCommand">set</span> <span class="PreProc">undodir</span>=<span class="PreProc">$HOME</span>/.vim/tmp/undo <span class="Comment">&quot; where to store undo </span>
+</pre>
+<pre class='fragment vimCodeElement'>
+<span id="L17" class="LineNr">17 </span><span class="Comment">&quot; syntax</span>
+<span id="L18" class="LineNr">18 </span><span class="vimCommand">syntax</span> <span class="vimSynType">on</span> <span class="Comment">&quot; enable syntax highlighting</span>
+<span id="L19" class="LineNr">19 </span><span class="Comment">&quot; filetype</span>
+<span id="L20" class="LineNr">20 </span><span class="vimCommand">filetype</span> <span class="vimSynType">on</span> <span class="Comment">&quot; enable filetype detection</span>
+<span id="L21" class="LineNr">21 </span><span class="vimCommand">filetype</span> <span class="vimSynType">plugin</span> <span class="vimSynType">on</span> <span class="Comment">&quot; enable filetype plugins</span>
+<span id="L22" class="LineNr">22 </span><span class="vimCommand">filetype</span> <span class="vimSynType">indent</span> <span class="vimSynType">on</span> <span class="Comment">&quot; enable filetype indentation</span>
+</pre>
+
+                        <aside class='notes'>
+                            <ol>
+                                <li>nocompatible</li>
+                                <li>backup</li>
+                                <li>syntax</li>
+                            </ol>
+                        </aside>
+					</section>
+
+					<section data-background="#fdf6e3">
+						<h2>Demo configuration</h2>
+<pre class='fragment vimCodeElement'>
+<span id="L24" class="LineNr">24 </span><span class="Comment">&quot; tabstop settings</span>
+<span id="L25" class="LineNr">25 </span><span class="vimCommand">set</span> <span class="PreProc">tabstop</span>=4 <span class="Comment">&quot; a tab will be represented with 4 columns</span>
+<span id="L26" class="LineNr">26 </span><span class="vimCommand">set</span> <span class="PreProc">softtabstop</span>=4 <span class="Comment">&quot; &lt;tab&gt; is pressed in insert mode 4 columns</span>
+<span id="L27" class="LineNr">27 </span><span class="vimCommand">set</span> <span class="PreProc">shiftwidth</span>=4 <span class="Comment">&quot; indentation is 4 columns</span>
+<span id="L28" class="LineNr">28 </span><span class="vimCommand">set</span> <span class="PreProc">noexpandtab</span> <span class="Comment">&quot; tabs are tabs, do not replace with spaces</span>
+</pre>
+<pre class='fragment vimCodeElement'>
+<span id="L30" class="LineNr">30 </span><span class="Comment">&quot; show linenumbers</span>
+<span id="L31" class="LineNr">31 </span><span class="vimCommand">set</span> <span class="PreProc">number</span>
+</pre>
+<pre class='fragment vimCodeElement'>
+<span id="L33" class="LineNr">33 </span><span class="Comment">&quot; colorscheme</span>
+<span id="L34" class="LineNr">34 </span><span class="vimCommand">set</span> <span class="PreProc">background</span>=dark <span class="Comment">&quot; indicate we'll use dark background</span>
+<span id="L35" class="LineNr">35 </span><span class="vimCommand">colorscheme</span> <span class="vimIsCommand">elflord</span> <span class="Comment">&quot; example colorscheme, is default available, many more can be added</span>
+</pre>
+						<p class="fragment"><a href="https://github.com/BlackIkeEagle/vim-configuration-in-steps">vim configuration in steps</a></p>
+
+                        <aside class='notes'>
+                            <ol>
+                                <li>indentation</li>
+                                <li>linenumbers</li>
+                                <li>color</li>
+                            </ol>
+                        </aside>
 					</section>
 				</section>
 
