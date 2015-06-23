@@ -409,6 +409,91 @@
 				</section>
 
 				<section>
+					<section data-background="#fdf6e3">
+						<h2>Extendability</h2>
+						<p>Vim has it's own programming language VimL.</p>
+					</section>
+
+                    <section>
+                        <h2>Most plugins are written in VimL</h2>
+                        <p>But not limited to it, you can use python, ruby, perl and lua too.</p>
+                    </section>
+                </section>
+
+				<section>
+					<section data-background="#fdf6e3">
+						<h2>Configure Vim</h2>
+						<p>The configuration will be done in &ldquo;~/.vimrc&rdquo; and addidional plugins to make our lives easier go into &ldquo;~/.vim&rdquo;</p>
+					</section>
+
+					<section>
+						<h2>Choose mode</h2>
+						<p>Vim has a vi compatible mode or you can choose to use the no compatible mode to be able to use all Vim specific features</p>
+					</section>
+
+					<section>
+						<h2>Backup rules</h2>
+						<p>Vim creates a backup of every file you edit, it also keeps a &ldquo;swap&rdquo; file by default. Vim also keeps views around but I personally never saw one saved to disk.</p>
+						<p>Vim can also persist undo information.</p>
+						<p>By default all these files are stored next to the file you are editing, this can pollute your source tree.</p>
+
+                        <aside class='notes'>
+                            <ul>
+                                <li>backup files</li>
+                                <li>persistent undo is insanely powerfull</li>
+                            </ul>
+                        </aside>
+					</section>
+
+					<section>
+						<h2>Filetype, syntax highlighting</h2>
+						<p>We have to enable syntax highlighting and filetype detection, most distributions already enable this by default.</p>
+
+                        <aside class='notes'>
+                            <ul>
+                                <li>Just be honest, we like colors better than just black and white</li>
+                                <li>If you are getting on a ubuntu server, first action: apt-get install vim</li>
+                                <li>most linux distributions have syntax highlighting enabled by default</li>
+                                <li>In many distributions the default vim installed is a vi compatbile tiny version, install the full version!</li>
+                            </ul>
+                        </aside>
+					</section>
+
+					<section>
+						<h2></h2>
+						<p>If you are getting on a ubuntu server, first action:<br />apt-get install vim</p>
+						<p>In most linux distributions vim comes with syntax highlighting enabled by default.</p>
+						<p>In many distributions the default vim installed is a vi compatbile tiny version, install the full version!</p>
+					</section>
+
+
+					<section>
+						<h2>Tabstop</h2>
+						<p>Tabstop is going to define how the syntax indentation and tab key will behave.</p>
+					</section>
+
+					<section>
+						<h2>Linenumbers</h2>
+						<p>When we are programming knowing what line we are on</p>
+					</section>
+
+					<section>
+						<h2>Colorscheme</h2>
+						<p>And ofcourse we 'never' use the default colorscheme since we all think thatone is not good enough for us</p>
+					</section>
+
+					<section>
+						<h2>Many more configuration possibilities</h2>
+						<p>The ones mentioned before are &ldquo;most&rdquo; important to start doing our job</p>
+					</section>
+
+					<section>
+						<h2>Demo configuration</h2>
+						<p><a href="https://github.com/BlackIkeEagle/vim-configuration-in-steps">vim configuration in steps</a></p>
+					</section>
+				</section>
+
+				<section>
 					<h2>Still no word about PHP ?!?</h2>
 					<img src="assets/boring.jpg" alt="boring" />
 				</section>
@@ -421,7 +506,6 @@
 					<section data-background="#FF9900">
 						<h2>Stuff for coders, what do we want?</h2>
 						<ul>
-							<li class="fragment">syntax highlighting</li>
 							<li class="fragment">completion</li>
 							<li class="fragment">search in files</li>
 							<li class="fragment">(syntax) errors</li>
@@ -433,13 +517,6 @@
 
 					<section>
 						<h2>Many of the things we need are available out of the box</h2>
-					</section>
-
-					<section>
-						<h2>syntax highlighting</h2>
-						<p>If you are getting on a ubuntu server, first action:<br />apt-get install vim</p>
-						<p>In most linux distributions vim comes with syntax highlighting enabled by default.</p>
-						<p>In many distributions the default vim installed is a vi compatbile tiny version, install the full version!</p>
 					</section>
 
 					<section>
@@ -491,58 +568,9 @@
 					</section>
 				</section>
 
-				<section>
-					<h2>OMG Vim is HARD!</h2>
+				<section data-background="#FF4400">
+					<h2>#@!! Vim is HARD!</h2>
 					<img src="assets/text_editors.jpg" alt="text editors" />
-				</section>
-
-				<section>
-					<section>
-						<h2>Configure Vim</h2>
-						<p>The configuration will be done in &ldquo;~/.vimrc&rdquo; and addidional plugins to make our lives easier go into &ldquo;~/.vim&rdquo;</p>
-					</section>
-
-					<section>
-						<h2>Choose mode</h2>
-						<p>Vim has a vi compatible mode or you can choose to use the no compatible mode to be able to use all Vim specific features</p>
-					</section>
-
-					<section>
-						<h2>Backup rules</h2>
-						<p>Vim creates a backup of every file you edit, it also keeps a &ldquo;swap&rdquo; file by default. Vim also keeps views around but I personally never saw one saved to disk.</p>
-						<p>Vim can also persist undo information.</p>
-						<p>By default all these files are stored next to the file you are editing, this can pollute your source tree.</p>
-					</section>
-
-					<section>
-						<h2>Filetype</h2>
-						<p>We have to enable syntax highlighting and filetype detection, most distributions already enable this by default.</p>
-					</section>
-
-					<section>
-						<h2>Tabstop</h2>
-						<p>Tabstop is going to define how the syntax indentation and tab key will behave.</p>
-					</section>
-
-					<section>
-						<h2>Linenumbers</h2>
-						<p>When we are programming knowing what line we are on</p>
-					</section>
-
-					<section>
-						<h2>Colorscheme</h2>
-						<p>And ofcourse we 'never' use the default colorscheme since we all think thatone is not good enough for us</p>
-					</section>
-
-					<section>
-						<h2>Many more configuration possibilities</h2>
-						<p>The ones mentioned before are &ldquo;most&rdquo; important to do our job</p>
-					</section>
-
-					<section>
-						<h2>Demo configuration</h2>
-						<p><a href="https://github.com/BlackIkeEagle/vim-configuration-in-steps">vim configuration in steps</a></p>
-					</section>
 				</section>
 
 				<section>
