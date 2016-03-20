@@ -77,63 +77,63 @@
 					</ul>
 				</section>
 
-				<section>
-					<img src="assets/0xbabaf000l.png" alt="Vim comic" />
+                <section>
+                    <section>
+                        <h2>What is Vim ?</h2>
+                        <blockquote cite="http://www.vim.org/about.php">
+                            &ldquo;Vim is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems.&rdquo;
+                        </blockquote>
 
-                    <aside class='notes'>
+                        <blockquote cite="http://www.vim.org/about.php">
+                            &ldquo;Vim is often called a "programmer's editor," and so useful for programming that many consider it an entire IDE. It's not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.&rdquo;
+                        </blockquote>
+
+                        <aside class='notes'>
+                            <ul>
+                                <li>configurable</li>
+                                <li>extendable</li>
+                                <li>CORE concept: combination</li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>What is Vim NOT ?</h2>
+                        <blockquote cite="http://www.vim.org/about.php">
+                            &ldquo;Vim isn't an editor designed to hold its users' hands. It is a tool, the use of which must be learned.&rdquo;
+                        </blockquote>
+
+                        <blockquote cite="http://www.vim.org/about.php">
+                            &ldquo;Vim isn't a word processor. Although it can display text with various forms of highlighting and formatting, it isn't there to provide WYSIWYG editing of typeset documents. (It is great for editing TeX, though.)&rdquo;
+                        </blockquote>
+
+                        <aside class='notes'>
+                            <ul>
+                                <li>Vim is like programming, you must keep learning</li>
+                                <li>once you've mastered the core concepts its amazing</li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Why Vim for PHP development</h2>
                         <ul>
-                            <li>emacs: overpowered</li>
-                            <li>vi: looks insanely complicated</li>
-                            <li>notepad: its all up to you</li>
+                            <li>Vim has everything (or almost) a PHP developer needs</li>
+                            <li>We just need to unlock or find the &ldquo;right&rdquo; feature</li>
+                            <li>Once you know it, it allows you to write while thinking</li>
                         </ul>
-                    </aside>
-				</section>
+                    </section>
+                </section>
 
-				<section>
-					<h2>What is Vim ?</h2>
-					<blockquote cite="http://www.vim.org/about.php">
-						&ldquo;Vim is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems.&rdquo;
-					</blockquote>
+                <section>
+                    <section data-background="#fd6421">
+                        <img src="assets/cant-quit.png" alt="Can't quit vim" />
+                    </section>
 
-					<blockquote cite="http://www.vim.org/about.php">
-						&ldquo;Vim is often called a "programmer's editor," and so useful for programming that many consider it an entire IDE. It's not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.&rdquo;
-					</blockquote>
-
-                    <aside class='notes'>
-                        <ul>
-                            <li>configurable</li>
-                            <li>extendable</li>
-                            <li>CORE concept: combination</li>
-                        </ul>
-                    </aside>
-				</section>
-
-				<section>
-					<h2>What is Vim NOT ?</h2>
-					<blockquote cite="http://www.vim.org/about.php">
-						&ldquo;Vim isn't an editor designed to hold its users' hands. It is a tool, the use of which must be learned.&rdquo;
-					</blockquote>
-
-					<blockquote cite="http://www.vim.org/about.php">
-						&ldquo;Vim isn't a word processor. Although it can display text with various forms of highlighting and formatting, it isn't there to provide WYSIWYG editing of typeset documents. (It is great for editing TeX, though.)&rdquo;
-					</blockquote>
-
-                    <aside class='notes'>
-                        <ul>
-                            <li>learn and be amazed</li>
-                            <li>once you've mastered the core concepts its amazing</li>
-                        </ul>
-                    </aside>
-				</section>
-
-				<section>
-					<h2>Why Vim for PHP development</h2>
-                    <ul>
-                        <li>Vim has everything (or almost) a PHP developer needs</li>
-                        <li>We just need to unlock or find the &ldquo;right&rdquo; feature</li>
-                        <li>Once you know it, it allows you to write while thinking</li>
-                    </ul>
-				</section>
+                    <section>
+                        <img src="assets/hmm-its-on-the-startscreen.png" alt="Nah, its on the startscreen" />
+                    </section>
+                </section>
 
 				<section>
                     <section data-background="#fdf6e3">
@@ -144,19 +144,11 @@
 					<section>
 						<h2>Modal editor</h2>
 						<p>Hu ? Modal editor?</p>
-						<p>A modal editor has different modes of operation.</p>
-						<ul class="fragment">
-							<li>Normal mode</li>
-							<li>Insert mode</li>
-							<li>Visual mode</li>
-						</ul>
+						<p class="fragment">A modal editor has different modes of operation.</p>
 
                         <aside class='notes'>
                             <ul>
-                                <li>normal mode: you give commands, no editing</li>
-                                <li>insert mode: editing as you are used to</li>
-                                <li>visual mode: selecting text</li>
-                                <li>next few slides are for online readers</li>
+                                <li>The idea here is that you make a trade-off of complexity for power. (To be more precise, each mode is often more simple because it is generally optimized for a specific task of reduced scope, but the number of different modes can make the system as a whole seem more complex.)</li>
                             </ul>
                         </aside>
 					</section>
@@ -164,23 +156,27 @@
 					<section>
 						<h2>Normal mode</h2>
 						<p>In this mode everything you &ldquo;type&rdquo; is interpreted as a command you give.</p>
+                        <video autoplay loop muted>
+                            <source src="assets/vim-normal-mode.webm" type="video/webm">
+                        </video>
+
+                        <aside class='notes'>
+                            <ul>
+                                <li>normal mode: you give commands, no editing</li>
+                            </ul>
+                        </aside>
 					</section>
 
 					<section>
 						<h2>Insert mode</h2>
 						<p>This is what you are used to, start typing and you are adding text</p>
-						<ul>
-							<li>&ldquo;i&rdquo; =&gt; insert mode at current position</li>
-							<li>&ldquo;I&rdquo; =&gt; insert mode at beginning of line</li>
-							<li>&ldquo;a&rdquo; =&gt; insert mode at next position (appending)</li>
-							<li>&ldquo;A&rdquo; =&gt; insert mode at end of line (appending)</li>
-							<li>&ldquo;o&rdquo; =&gt; insert mode open new line after current line</li>
-							<li>&ldquo;O&rdquo; =&gt; insert mode open new line before current line</li>
-							<li>&ldquo;r&rdquo; =&gt; insert mode replace current character</li>
-							<li>&ldquo;R&rdquo; =&gt; insert mode start replace from current character</li>
-						</ul>
+
+                        <video autoplay loop muted>
+                            <source src="assets/vim-insert-mode.webm" type="video/webm">
+                        </video>
 
                         <aside class='notes'>
+                            <p>insert mode: editing as you are used to</p>
                             <p>you can start writing at:</p>
                             <ul>
                                 <li>current position</li>
@@ -198,20 +194,32 @@
 					<section>
 						<h2>Visual mode</h2>
 						<p>This mode could be compared to selecting some text</p>
-						<ul>
-							<li>&ldquo;v&rdquo; =&gt; highlight continuous text from current position</li>
-							<li>&ldquo;V&rdquo; =&gt; highlight complete lines</li>
-							<li>&ldquo;ctrl + v&rdquo; =&gt; highlight block mode (columns)</li>
-						</ul>
-						<p>&nbsp;</p>
-						<p><small>To define a visual highlight you can use all movement keys</small></p>
+
+                        <video autoplay loop muted>
+                            <source src="assets/vim-visual-mode.webm" type="video/webm">
+                        </video>
 
                         <aside class='notes'>
-                            <p>block selection:</p>
                             <ul>
+                                <li>visual mode: selecting text</li>
                                 <li>continuous: like dragging with the mouse</li>
                                 <li>lines</li>
                                 <li>block</li>
+                            </ul>
+                        </aside>
+					</section>
+
+					<section>
+						<h2>Search mode</h2>
+						<p>This is kinda obvious search</p>
+
+                        <video autoplay loop muted>
+                            <source src="assets/vim-search-mode.webm" type="video/webm">
+                        </video>
+
+                        <aside class='notes'>
+                            <ul>
+                                <li>search mode: search text, lines, ...</li>
                             </ul>
                         </aside>
 					</section>
@@ -220,8 +228,7 @@
 
 				<section>
 					<section data-background="#fdf6e3">
-						<h2>Moving around without mouse and without arrow keys</h2>
-						<p>In the end you should move around without mouse or arrow keys</p>
+						<h2>Moving around</h2>
 					</section>
 
 					<section>
@@ -236,47 +243,24 @@
                         </aside>
 					</section>
 
-					<section>
-						<h2>Faster movement</h2>
-						<ul>
-							<li>by word
-								<ul>
-									<li>&ldquo;w,e&rdquo; =&gt; forward beginning or end of word</li>
-									<li>&ldquo;W,E&rdquo; =&gt; forward beginning or end of word (context)</li>
-									<li>&ldquo;b,ge&rdquo; =&gt; backward beginning or end of word</li>
-								</ul>
-							</li>
-							<li>line
-								<ul>
-									<li>&ldquo;0&rdquo; =&gt; beginning of line</li>
-									<li>&ldquo;^&rdquo; =&gt; beginning of line (non whitespace char)</li>
-									<li>&ldquo;$&rdquo; =&gt; end of line</li>
-								</ul>
-							</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Faster movement</h2>
-						<ul>
-							<li>&ldquo;gg&rdquo; =&gt; beginning of document</li>
-							<li>&ldquo;G&rdquo; =&gt; end of document</li>
-							<li>&ldquo;{N}G&rdquo; =&gt; goto linenumber {N}</li>
-							<li>&ldquo;ctrl + f&rdquo; =&gt; 'scroll' page forward</li>
-							<li>&ldquo;ctrl + b&rdquo; =&gt; 'scroll' page backward</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>Search movement</h2>
-						<ul>
-							<li>&ldquo;/{search}&rdquo; =&gt; search forward for {search}</li>
-							<li>&ldquo;?{search}&rdquo; =&gt; search backard for {search}</li>
-							<li>&ldquo;f{char}&rdquo; =&gt; goto first occurence of {char} on this line</li>
-							<li>&ldquo;F{char}&rdquo; =&gt; backward of &ldquo;f&rdquo;</li>
-							<li>&ldquo;t{char}&rdquo; =&gt; goto char before first occurence of {char} on line</li>
-							<li>&ldquo;T{char}&rdquo; =&gt; reverse of &ldquo;t&rdquo;</li>
-						</ul>
+					<section data-background-video="assets/vim-faster-movement.webm">
+                        <div style="width 48%; display: inline-block; margin-left: 52%; vertical-align: top;">
+                            <small><p>Faster movement</p></small>
+                            <ul>
+                                <small><li>w,e forward word</li></small>
+                                <small><li>b,ge backward word</li></small>
+                                <small><li>0 absolute begin of line</li></small>
+                                <small><li>^ begin of line</li></small>
+                                <small><li>$ end of line</li></small>
+                                <small><li>gg begin of document</li></small>
+                                <small><li>G end of document</li></small>
+                                <small><li>{N}G goto linenumber</li></small>
+                                <small><li>ctrl + f forward page</li></small>
+                                <small><li>ctrl + b backward page</li></small>
+                                <small><li>f,F forward/backward to occurence of char</li></small>
+                                <small><li>t,T forward/backware before occurence of char</li></small>
+                            </ul>
+                        </div>
 					</section>
 
 					<section>
@@ -295,90 +279,25 @@
 						<h2>Common commands</h2>
 						<ul>
 							<li>Quit: &ldquo;:q&rdquo;</li>
-							<li>Quit and I don't care about the changes: &ldquo;:q!&rdquo;</li>
-							<li>Quit everything: &ldquo;:qa&rdquo;</li>
 							<li>Write: &ldquo;:w&rdquo;</li>
-							<li>Write and quit: &ldquo;:wq&rdquo;</li>
+							<li>Copy: &ldquo;y&rdquo; (called yank)</li>
+							<li>Cut: &ldquo;d&rdquo; (delete)</li>
+							<li>Paste: &ldquo;p&rdquo;</li>
+							<li>Replace from current postion: &ldquo;R&rdquo;</li>
+							<li>Substitute (search and replace):<br />&ldquo;:s/{pattern}/{substitution}/{flags}&rdquo;</li>
+							<li>Undo: &ldquo;u&rdquo;</li>
+							<li>Redo: &ldquo;ctrl + r&rdquo;</li>
 						</ul>
-						<p><small>&ldquo;:help editing.txt&rdquo;</small></p>
 
                         <aside class='notes'>
                             <ul>
                                 <li>quit</li>
                                 <li>write</li>
-                                <li>here you already can see the power of combination</li>
-                            </ul>
-                        </aside>
-					</section>
-
-					<section>
-						<h2>Copy / paste</h2>
-						<ul>
-							<li>Copy: &ldquo;y&rdquo; (called yank)</li>
-							<li>Cut: &ldquo;d&rdquo; (delete)</li>
-							<li>Cut Characters: &ldquo;x&rdquo; (cut after); &ldquo;X&rdquo; (cut before)</li>
-							<li>Paste: &ldquo;p&rdquo;</li>
-						</ul>
-						<p><small>&ldquo;:help change.txt&rdquo;</small></p>
-
-                        <aside class='notes'>
-                            <ul>
                                 <li>copy is called yank</li>
                                 <li>cut is delete</li>
                                 <li>side note: vim can use multiple registers to store copy/past data</li>
-                            </ul>
-                        </aside>
-					</section>
-
-					<section>
-						<h2>Text Manipulation</h2>
-						<ul>
-							<li>Replace current selection: &ldquo;r&rdquo;</li>
-							<li>Replace from current postion: &ldquo;R&rdquo;</li>
-							<li>Substitute (search and replace):<br />&ldquo;:s/{pattern}/{substitution}/{flags}&rdquo;</li>
-							<li>Flip the case of character: &ldquo;~&rdquo;</li>
-							<li>Increment number: &ldquo;ctrl + a&rdquo;</li>
-							<li>Decrement number: &ldquo;ctrl + x&rdquo;</li>
-						</ul>
-						<p><small>&ldquo;:help change.txt&rdquo;</small></p>
-
-                        <aside class='notes'>
-                            <ul>
                                 <li>search and replace is fully regex based</li>
-                                <li>some neat tricks</li>
-                                <li>case, increment, decrement</li>
-                            </ul>
-                        </aside>
-					</section>
-
-					<section>
-						<h2>Undo / Redo</h2>
-						<ul>
-							<li>Undo: &ldquo;u&rdquo;</li>
-							<li>Undo last change on this line: &ldquo;U&rdquo;</li>
-							<li>Redo: &ldquo;ctrl + r&rdquo;</li>
-						</ul>
-						<p><small>&ldquo;:help undo.txt&rdquo;</small></p>
-
-                        <aside class='notes'>
-                            <ul>
                                 <li>undo/redo works like a git commit history, even with branches and such</li>
-                            </ul>
-                        </aside>
-					</section>
-
-					<section>
-						<h2>Quantifiers</h2>
-						<p>Quantifiers can be used to 'extend' the reach of a command</p>
-						<ul>
-							<li>Move to the 5th word: &ldquo;5w&rdquo;</li>
-							<li>Yank the next 3 lines: &ldquo;3yy&rdquo;</li>
-							<li>Delete up til the end of the 3rd word form here: &ldquo;d3e&rdquo;</li>
-						</ul>
-
-                        <aside class='notes'>
-                            <ul>
-                                <li>most things can be used in combination with quantifiers</li>
                             </ul>
                         </aside>
 					</section>
@@ -440,59 +359,6 @@
 						<p>The configuration will be done in &ldquo;~/.vimrc&rdquo; and addidional plugins to make our lives easier go into &ldquo;~/.vim&rdquo;</p>
 					</section>
 
-					<section>
-						<h2>Choose mode</h2>
-						<p>Vim has a vi compatible mode or you can choose to use the no compatible mode to be able to use all Vim specific features</p>
-					</section>
-
-					<section>
-						<h2>Backup rules</h2>
-						<p>Vim creates a backup of every file you edit, it also keeps a &ldquo;swap&rdquo; file by default. Vim also keeps views around but I personally never saw one saved to disk.</p>
-						<p>Vim can also persist undo information.</p>
-						<p>By default all these files are stored next to the file you are editing, this can pollute your source tree.</p>
-
-                        <aside class='notes'>
-                            <ul>
-                                <li>backup files</li>
-                                <li>persistent undo is insanely powerfull</li>
-                            </ul>
-                        </aside>
-					</section>
-
-					<section>
-						<h2>Filetype, syntax highlighting</h2>
-						<p>We have to enable syntax highlighting and filetype detection, most distributions already enable this by default.</p>
-
-                        <aside class='notes'>
-                            <ul>
-                                <li>Just be honest, we like colors better than just black and white</li>
-                                <li>If you are getting on a ubuntu server, first action: apt-get install vim</li>
-                                <li>most linux distributions have syntax highlighting enabled by default</li>
-                                <li>In many distributions the default vim installed is a vi compatbile tiny version, install the full version!</li>
-                            </ul>
-                        </aside>
-					</section>
-
-					<section>
-						<h2>Tabstop</h2>
-						<p>Tabstop is going to define how the syntax indentation and tab key will behave.</p>
-					</section>
-
-					<section>
-						<h2>Linenumbers</h2>
-						<p>When we are programming knowing what line we are on</p>
-					</section>
-
-					<section>
-						<h2>Colorscheme</h2>
-						<p>And ofcourse we 'never' use the default colorscheme since we all think thatone is not good enough for us</p>
-					</section>
-
-					<section>
-						<h2>Many more configuration possibilities</h2>
-						<p>The ones mentioned before are &ldquo;most&rdquo; important to start doing our job</p>
-					</section>
-
 					<section data-background="#fdf6e3">
 						<h2>Demo configuration</h2>
 <pre class='fragment vimCodeElement'>
@@ -538,7 +404,7 @@
 <span id="L25" class="LineNr">25 </span><span class="vimCommand">set</span> <span class="PreProc">tabstop</span>=4 <span class="Comment">&quot; a tab will be represented with 4 columns</span>
 <span id="L26" class="LineNr">26 </span><span class="vimCommand">set</span> <span class="PreProc">softtabstop</span>=4 <span class="Comment">&quot; &lt;tab&gt; is pressed in insert mode 4 columns</span>
 <span id="L27" class="LineNr">27 </span><span class="vimCommand">set</span> <span class="PreProc">shiftwidth</span>=4 <span class="Comment">&quot; indentation is 4 columns</span>
-<span id="L28" class="LineNr">28 </span><span class="vimCommand">set</span> <span class="PreProc">noexpandtab</span> <span class="Comment">&quot; tabs are tabs, do not replace with spaces</span>
+<span id="L28" class="LineNr">28 </span><span class="vimCommand">set</span> <span class="PreProc">expandtab</span> <span class="Comment">&quot; tabs are replaced with spaces</span>
 </pre>
 <pre class='fragment vimCodeElement'>
 <span id="L30" class="LineNr">30 </span><span class="Comment">&quot; show linenumbers</span>
@@ -564,10 +430,6 @@
 				<section>
 					<h2>Still no word about PHP ?!?</h2>
 					<img src="assets/boring.jpg" alt="boring" />
-				</section>
-
-				<section data-background="#fdf6e3">
-					<h2>No PHP yet !</h2>
 				</section>
 
 				<section>
@@ -781,7 +643,7 @@
 					</section>
 				</section>
 
-				<section data-background="#FF4400">
+				<section data-background="#fd6421">
 					<h2>#@!! Vim is HARD!</h2>
 					<img src="assets/text_editors.jpg" alt="text editors" />
 				</section>
@@ -801,6 +663,18 @@
 				</section>
 
                 <section>
+                    <h2>References</h2>
+                    <ul>
+                        <li><a href="https://twitter.com/iamdevloper/status/435555976687923200" >https://twitter.com/iamdevloper/status/435555976687923200</a></li>
+                        <li><a href="https://wincent.com/wiki/Modal_editor">https://wincent.com/wiki/Modal_editor</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="assets/keep-calm-and-hjkl.jpg" alt="keep calm and hjkl"/>
+                </section>
+
+                <section>
                     <div style="width: 50%; display: inline-block; margin-right: 2%; vertical-align: top;">
                         <h2>Thanks.</h2>
                         <p style="text-align: left;"><a href="https://joind.in/14697">https://joind.in/14697</a></p>
@@ -812,7 +686,7 @@
                     <div style="width: 65%; display: inline-block; margin-right: 2%; vertical-align: top;">
                         <h2>Ike Devolder</h2>
                         <p style="text-align: left;">@BlackIkeEagle</p>
-                        <p style="text-align: left;">Senior Webdeveloper - Studio Emma</p>
+                        <p style="text-align: left;">Webdeveloper - Studio Emma</p>
                         <p style="text-align: left;">PHP-WVL</p>
                         <p style="text-align: left;">Archlinux Trusted User</p>
                     </div>
